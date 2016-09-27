@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Mikambi" created="September 26, 2016 7:29:42 PM EDT" modified="September 26, 2016 8:19:33 PM EDT" specVersion="2" urnVersion="1.27" nextGlobalID="110">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Mikambi" created="September 26, 2016 7:29:42 PM EDT" modified="September 27, 2016 1:05:47 PM EDT" specVersion="4" urnVersion="1.27" nextGlobalID="159">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="ScenarioDef8" id="8"/>
@@ -23,7 +23,21 @@
     <intElements name="Capture only relavent data" id="82" linksSrc="86 88" type="Goal" refs="83"/>
     <intElements name="Use Approximate Data" id="96" linksSrc="100 101" type="Task" refs="97"/>
     <intElements name="Print formatted records" id="103" linksSrc="109" type="Task" refs="104"/>
+    <intElements name="Track Physical status" id="115" type="Goal" refs="116"/>
+    <intElements name="Understand health condition" id="119" type="Goal" refs="120"/>
+    <intElements name="Ease of Use" id="121" type="Goal" refs="122"/>
+    <intElements name="RFID Implant" id="128" type="Task" refs="129"/>
+    <intElements name="Comprehensive form" id="130" type="Task" refs="131"/>
+    <intElements name="Communication with Doctor" id="132" type="Goal" refs="133"/>
+    <intElements name="System interpretation" id="138" type="Goal" refs="139"/>
+    <intElements name="Automatic Entry" id="140" type="Goal" refs="141"/>
+    <intElements name="Simple UI" id="144" type="Goal" refs="145"/>
+    <intElements name="Reduce required data" id="148" type="Task" refs="149"/>
+    <intElements name="Compartmentalize data entry" id="150" type="Task" refs="151"/>
+    <intElements name="External database" id="154" type="Task" refs="155"/>
+    <intElements name="Integrated System" id="156" type="Task" refs="157"/>
     <actors name="Doctor" id="13" contRefs="14"/>
+    <actors name="Patient" id="111" contRefs="112"/>
     <links xsi:type="grl:Contribution" name="Contribution55" id="55" refs="//@urndef/@specDiagrams.0/@connections.0" dest="25" src="35" contribution="SomePositive" quantitativeContribution="75"/>
     <links xsi:type="grl:Contribution" name="Contribution56" id="56" refs="//@urndef/@specDiagrams.0/@connections.1" dest="25" src="39" contribution="SomePositive" quantitativeContribution="75"/>
     <links xsi:type="grl:Contribution" name="Contribution57" id="57" refs="//@urndef/@specDiagrams.0/@connections.2" dest="25" src="31" contribution="SomePositive" quantitativeContribution="75"/>
@@ -121,7 +135,62 @@
         <metadata name="_height" value="52"/>
         <metadata name="_width" value="110"/>
       </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef116" id="116" x="2184" y="178" contRef="112" def="115">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef120" id="120" x="1903" y="441" contRef="112" def="119">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef122" id="122" x="2445" y="353" contRef="112" def="121">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef129" id="129" x="2105" y="296" contRef="112" def="128">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef131" id="131" x="2251" y="294" contRef="112" def="130">
+        <metadata name="_height" value="56"/>
+        <metadata name="_width" value="118"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef133" id="133" x="1822" y="525" contRef="112" def="132">
+        <metadata name="_height" value="60"/>
+        <metadata name="_width" value="140"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef139" id="139" x="1991" y="529" contRef="112" def="138">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="126"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef141" id="141" x="2265" y="449" contRef="112" def="140">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef145" id="145" x="2609" y="421" contRef="112" def="144">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef149" id="149" x="2497" y="512" contRef="112" def="148">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef151" id="151" x="2627" y="506" contRef="112" def="150">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="140"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef155" id="155" x="2224" y="516" contRef="112" def="154">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef157" id="157" x="2327" y="512" contRef="112" def="156">
+        <metadata name="_height" value="52"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
       <contRefs xsi:type="grl:ActorRef" name="ActorRef14" id="14" x="330" y="122" width="928" height="792" contDef="13" nodes="22 26 28 32 34 36 38 40 44 46 50 52 54 77 83 97 104">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef112" id="112" x="1747" y="67" width="1048" height="860" contDef="111" nodes="116 120 122 129 131 133 139 141 145 149 151 155 157">
         <label/>
       </contRefs>
       <connections xsi:type="grl:LinkRef" source="36" target="26" link="55">
