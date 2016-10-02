@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Mikambi" created="September 26, 2016 7:29:42 PM EDT" modified="September 30, 2016 6:09:48 PM EDT" specVersion="17" urnVersion="1.27" nextGlobalID="1806">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fm="http:///fm.ecore" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="Mikambi" created="September 26, 2016 7:29:42 PM EDT" modified="October 2, 2016 3:35:42 PM EDT" specVersion="18" urnVersion="1.27" nextGlobalID="1806">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup7" id="7">
       <scenarios name="ScenarioDef8" id="8"/>
@@ -484,10 +484,6 @@
       <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint1389" id="1389" x="1333" y="132" contRef="1466" succ="//@urndef/@specDiagrams.2/@connections.30" pred="//@urndef/@specDiagrams.2/@connections.31"/>
       <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow1401" id="1401" x="1357" y="212" contRef="1466" succ="//@urndef/@specDiagrams.2/@connections.32" pred="//@urndef/@specDiagrams.2/@connections.58"/>
       <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint1418" id="1418" x="1190" y="360" contRef="1352" succ="//@urndef/@specDiagrams.2/@connections.34" pred="//@urndef/@specDiagrams.2/@connections.33"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="Feedback stored" id="1419" x="2127" y="329" contRef="322" pred="//@urndef/@specDiagrams.2/@connections.68">
-        <label/>
-        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
-      </nodes>
       <nodes xsi:type="ucm.map:Stub" name="Process Health Information" id="1447" x="1840" y="367" contRef="1440" succ="//@urndef/@specDiagrams.2/@connections.35" pred="//@urndef/@specDiagrams.2/@connections.52">
         <label/>
       </nodes>
@@ -525,7 +521,7 @@
       <nodes xsi:type="ucm.map:Stub" name="Communicate" id="1627" x="1354" y="549" contRef="1466" succ="//@urndef/@specDiagrams.2/@connections.55" pred="//@urndef/@specDiagrams.2/@connections.54">
         <label/>
       </nodes>
-      <nodes xsi:type="ucm.map:Stub" name="Gather feedback" id="1647" x="2276" y="353" contRef="1644" succ="//@urndef/@specDiagrams.2/@connections.56" pred="//@urndef/@specDiagrams.2/@connections.70">
+      <nodes xsi:type="ucm.map:Stub" name="Gather feedback" id="1647" x="2276" y="353" contRef="1644" succ="//@urndef/@specDiagrams.2/@connections.56" pred="//@urndef/@specDiagrams.2/@connections.70 //@urndef/@specDiagrams.2/@connections.68">
         <label deltaX="58" deltaY="-52"/>
       </nodes>
       <nodes xsi:type="ucm.map:AndFork" name="AndFork1672" id="1672" x="1422" y="122" contRef="1466" succ="//@urndef/@specDiagrams.2/@connections.59 //@urndef/@specDiagrams.2/@connections.60" pred="//@urndef/@specDiagrams.2/@connections.57"/>
@@ -545,10 +541,10 @@
         <label/>
       </nodes>
       <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint1799" id="1799" x="2079" y="119" contRef="318" succ="//@urndef/@specDiagrams.2/@connections.69" pred="//@urndef/@specDiagrams.2/@connections.29"/>
-      <nodes xsi:type="ucm.map:RespRef" name="RespRef1804" id="1804" x="2198" y="162" contRef="1644" succ="//@urndef/@specDiagrams.2/@connections.70" pred="//@urndef/@specDiagrams.2/@connections.69" respDef="1803">
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef1804" id="1804" x="2244" y="163" contRef="1644" succ="//@urndef/@specDiagrams.2/@connections.70" pred="//@urndef/@specDiagrams.2/@connections.69" respDef="1803">
         <label deltaX="65" deltaY="-17"/>
       </nodes>
-      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef322" id="322" x="-2" y="291" width="2435" height="126" contDef="321" nodes="1496 1420 1595 1596 1616 1685 1419" children="1352 1440 1780">
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef322" id="322" x="-2" y="291" width="2435" height="126" contDef="321" nodes="1496 1420 1595 1596 1616 1685" children="1352 1440 1780">
         <label/>
       </contRefs>
       <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef324" id="324" x="-7" y="491" width="2442" height="206" contDef="323" nodes="609 779 1002 1225 1682 1726 1734">
@@ -668,12 +664,13 @@
       <connections xsi:type="ucm.map:NodeConnection" source="1702" target="1726"/>
       <connections xsi:type="ucm.map:NodeConnection" source="1726" target="1734"/>
       <connections xsi:type="ucm.map:NodeConnection" source="1734" target="1682"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="1781" target="1419"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="1781" target="1647"/>
       <connections xsi:type="ucm.map:NodeConnection" source="1799" target="1804"/>
       <connections xsi:type="ucm.map:NodeConnection" source="1804" target="1647"/>
       <comments description="Where to place install/update/configure software&#xD;&#xA;" x="496" y="302" width="97" height="76" fillColor="255,255,200"/>
       <comments description="Dont forget to add failed paths afterwards&#xD;&#xA;" x="224" y="314" width="133" height="84" fillColor="255,255,200"/>
       <comments description="Should we add timeout path in case persistence did not work?&#xD;&#xA;" x="1967" y="423" width="110" height="117" fillColor="255,255,200"/>
+      <comments description="Should this be in a timer?&#xD;&#xA;" x="1064" y="426" width="109" height="45" fillColor="255,255,200"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap224" id="224">
       <nodes xsi:type="ucm.map:StartPoint" name="Register" id="442" x="87" y="95" succ="//@urndef/@specDiagrams.3/@connections.0">
@@ -917,7 +914,7 @@
     <components name="Data capturing" id="1347" contRefs="1348"/>
     <components name="Persitence" id="1351" contRefs="1352 1780"/>
     <components name="Processing" id="1439" contRefs="1440"/>
-    <components name="Wireless Communicatins" id="1465" contRefs="1466"/>
+    <components name="Wireless Communications" id="1465" contRefs="1466"/>
     <components name="Feedback" id="1643" contRefs="1644"/>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
